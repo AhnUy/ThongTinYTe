@@ -6,20 +6,33 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ThongTinYTe.Models;
-
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Text.Json;
+using Newtonsoft.Json;
 namespace ThongTinYTe.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        private readonly HttpClient client = null;
+        private string api;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            client = new HttpClient();
+            var contentType = new MediaTypeWithQualityHeaderValue("application/json");
+            client.DefaultRequestHeaders.Accept.Add(contentType);
+            this.api = "https://corona.lmao.ninja/v2/countries";
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            HttpResponseMessage response = await client.GetAsync(api);
+            string data = await response.Content.ReadAsStringAsync();
+
+            var countries = JsonConvert.DeserializeObject<dynamic>(data);
+            ViewBag.countries = countries;
             return View();
         }
 
