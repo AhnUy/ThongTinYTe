@@ -33,11 +33,12 @@ namespace ThongTinYTe.CovidVnServices
                 ProvinceAPI obj = JsonConvert.DeserializeObject<ProvinceAPI>(rawdata);
                 if (obj.success) {
                     var records = obj.result.records;
+                    _service.ReplaceRecords(records);
                     _logger.LogInformation($"Updated The CovidVN Records: {records.Count} provinces");
                 } else {
                     _logger.LogInformation("Cannot load the data");
                 }
-                await Task.Delay(1000 * 5);
+                await Task.Delay(1000 * 30);
             }
         }
     }

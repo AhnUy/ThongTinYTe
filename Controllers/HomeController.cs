@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
+﻿using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ThongTinYTe.Models;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text.Json;
 using Newtonsoft.Json;
 namespace ThongTinYTe.Controllers
 {
