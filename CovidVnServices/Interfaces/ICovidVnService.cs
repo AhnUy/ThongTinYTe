@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using ThongTinYTe.CovidVnServices.Models;
 
-namespace ThongTinYTe.CovidVnServices
+namespace ThongTinYTe.CovidVnServices.Interfaces
 {
     public interface ICovidVnService
     {

@@ -1,8 +1,9 @@
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using ThongTinYTe.CovidVnServices.Interfaces;
 using ThongTinYTe.CovidVnServices.Models;
 
-namespace ThongTinYTe.CovidVnServices
+namespace ThongTinYTe.CovidVnServices.Services
 {
     public class CovidVnService : ICovidVnService
     {

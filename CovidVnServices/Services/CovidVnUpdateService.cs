@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using ThongTinYTe.CovidVnServices.Interfaces;
 using ThongTinYTe.CovidVnServices.Models;
 
-namespace ThongTinYTe.CovidVnServices
+namespace ThongTinYTe.CovidVnServices.Services
 {
     public class CovidVnUpdateService : BackgroundService
     {

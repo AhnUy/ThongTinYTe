@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using ThongTinYTe.CovidVnServices;
+using ThongTinYTe.CovidVnServices.Interfaces;
 
 namespace ThongTinYTe.Controllers
 {

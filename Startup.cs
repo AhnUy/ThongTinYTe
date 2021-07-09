@@ -1,13 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using ThongTinYTe.CovidVnServices;
+using ThongTinYTe.CovidVnServices.Interfaces;
+using ThongTinYTe.CovidVnServices.Services;
 
 namespace ThongTinYTe
 {
