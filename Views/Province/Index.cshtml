@@ -1,0 +1,6 @@
+@model IEnumerable<ProvinceRecord>
+
+@foreach (var item in Model)
+{
+    <p>@item.Province @item.Infected</p>
+}
