@@ -1,6 +1,6 @@
-namespace ThongTinYTe.Models
+namespace ThongTinYTe.CovidVnServices.Models
 {
-    public class CaseResultRecordsAPI
+    public class CaseRecord
     {
         public int _id { get; set; }
         public int ID { get; set; }

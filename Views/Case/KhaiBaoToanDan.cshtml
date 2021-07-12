@@ -1,0 +1,136 @@
+@model KhaiBaoToanDan;
+@{
+    ViewData["Title"] = "KhaiBaoToanDan";
+    SelectList countries = new SelectList(ViewBag.countries);
+    SelectList cities = new SelectList(ViewBag.cities);
+    List<string> gds = new List<string> { "Nam", "Nu", "Khac" };
+    SelectList genders = new SelectList(gds);
+}
+
+<div class="h3 text-center">
+    THÔNG TIN KHAI BÁO Y TẾ
+</div>
+
+<div class="h4 text-center">
+    (PHÒNG CHỐNG DỊCH COVID-19)
+</div>
+
+<div class="h5 text-center text-danger">
+    Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự
+</div>
+
+<form asp-action="KhaiBaoToanDan" method="post">
+    <div class="form-group">
+        <div class="form-check">
+            @* TODO khai_ho *@
+            <input class="form-check-input" type="checkbox" asp-for="khai_ho">
+            <label class="text-success h6" asp-for="khai_ho">
+                Khai hộ
+            </label>
+        </div>
+    </div>
+    <div class="form-group form-row">
+        <div class="col">
+            <label asp-for="ho_ten">
+                Họ và tên (IN HOA)
+            </label>
+            @* TODO ho_ten *@
+            <input type="text" class="form-control" asp-for="ho_ten">
+        </div>
+        <div class="col">
+            <label asp-for="cmnd_cccd">
+                CMND / CCCD
+            </label>
+            @* TODO cmnd_cccd *@
+            <input type="text" class="form-control" asp-for="cmnd_cccd">
+        </div>
+    </div>
+    <div class="form-group form-row">
+        <div class="col">
+            <label asp-for="nam_sinh">
+                Năm sinh
+            </label>
+            @* TODO nam_sinh *@
+            <input type="number" class="form-control" asp-for="nam_sinh">
+        </div>
+        <div class="col">
+            <label asp-for="gioi_tinh">
+                Giới tính
+            </label>
+            @* TODO gioi_tinh *@
+            <select class="form-control" asp-items="@genders" asp-for="gioi_tinh"></select>
+        </div>
+        <div class="col">
+            <label asp-for="quoc_tich">
+                Quốc tịch
+            </label>
+            @* TODO quoc_tich *@
+            <select class="form-control" asp-items="@countries" asp-for="quoc_tich"></select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="h6">
+           Địa chỉ liên lạc tại Việt Nam 
+        </label>
+    </div>
+    <div class="form-group form-row">
+        <div class="col-3">
+            <label asp-for="tinh_thanh">
+                Tỉnh thành
+            </label>
+            @* TODO tinh_thanh *@
+            <select class="form-control" asp-items="@cities" asp-for="tinh_thanh"></select>
+        </div>
+        <div class="col">
+            <label asp-for="dia_chi">
+                Số nhà, phố, tổ dân phố/thôn/đội
+            </label>
+            @* TODO dia_chi *@
+            <input type="text" class="form-control" asp-for="dia_chi">
+        </div>
+    </div>
+    <div class="form-group form-row">
+        <div class="col">
+            <label asp-for="dien_thoai">
+                Điện thoại
+            </label>
+            @* TODO dien_thoai *@
+            <input type="text" class="form-control" asp-for="dien_thoai">
+        </div>
+        <div class="col">
+            <label asp-for="email">
+                Email
+            </label>
+            @* TODO email *@
+            <input type="text" class="form-control" asp-for="email">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            @* TODO had_travel *@
+            <input type="checkbox" class="form-check-input" asp-for="had_travel">
+            <label class="h6" asp-for="had_travel">
+                Trong vòng 14 ngày qua, Anh/chị có đến tỉnh/thành phố, quốc gia/vùng lãnh thổ nào(Có thể đi qua nhiều nơi).
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            @* TODO had_symptom *@
+            <input type="checkbox" class="form-check-input" asp-for="had_symptom">
+            <label class="h6" asp-for="had_symptom">
+                Trong vòng 14 ngày qua, Anh/chị có thấy xuất hiện ít nhất một trong các dấu hiệu:sốt, ho, khó thở, viêm phổi, đau họng, mệt mỏi.
+            </label>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            @* TODO had_contact_infected_suspected *@
+            <input type="checkbox" class="form-check-input" asp-for="had_contact_infected_suspected">
+            <label class="h6" asp-for="had_contact_infected_suspected">
+                Trong vòng 14 ngày qua, Anh/Chị có tiếp xúc với người bệnh hoặc nghi ngờ, mắc bệnh COVID-19.
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-outline-primary form-control">Gửi</button>
+</form>

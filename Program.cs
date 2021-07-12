@@ -17,6 +17,7 @@ namespace ThongTinYTe
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<CovidVnUpdateService>();
+                    services.AddHostedService<CovidVnDetailsUpdateService>();
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

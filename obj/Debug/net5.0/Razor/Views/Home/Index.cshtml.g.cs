@@ -26,8 +26,15 @@ using ThongTinYTe.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\Views\_ViewImports.cshtml"
+using ThongTinYTe.CovidVnServices.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"48eed12714ab14c37426e53fb1c64ee69de0b56d", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"23d3f5a1f41e57f0312410ea2e50d71408ce9047", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"902612fe285b0341e1cfe6d531211bca4ed6a5b0", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
