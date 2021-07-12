@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using ThongTinYTe.CovidVnServices.Interfaces;
+using ThongTinYTe.CovidVnServices.Models;
 
 namespace ThongTinYTe.Controllers
 {
@@ -12,7 +14,9 @@ namespace ThongTinYTe.Controllers
         }
 
         public IActionResult Index() {
-            return View(_service.GetRecords());
+            List<ProvinceRecord> records = new List<ProvinceRecord>(_service.GetRecords());
+            records.Sort((r1, r2) => r1.Province.CompareTo(r2.Province));
+            return View(records);
         }
     }
 }
