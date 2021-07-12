@@ -145,3 +145,4 @@ D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\ThongTinYTe.g
 D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Province\Index.cshtml.g.cs
 D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\Index.cshtml.g.cs
 D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\KhaiBaoToanDan.cshtml.g.cs
+D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\CanhBaoKhuVuc.cshtml.g.cs
