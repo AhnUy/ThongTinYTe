@@ -21,7 +21,7 @@ namespace ThongTinYTe.Controllers
         }
 
         // public IActionResult Index() {
-        //     return View(_service.GetRecords());
+        //     return View(_service_detail.GetRecords());
         // }
 
         public async Task<IActionResult> KhaiBaoToanDan()
@@ -51,6 +51,19 @@ namespace ThongTinYTe.Controllers
             ViewBag.countries = countries_list;
 
             return View();
+        }
+        [HttpPost]
+        public IActionResult KhaiBaoToanDan(KhaiBaoToanDan people)
+        {
+            IEnumerable<CaseRecord> records = _service_detail.GetRecords();
+            foreach (CaseRecord record in records)
+            {
+                if (record.Location == people.tinh_thanh)
+                {
+                    return View("CanhBaoKhuVuc");
+                }
+            }
+            return RedirectToAction("Index", "Home");
         }
     }
     public class CountriesAPI

@@ -22,7 +22,7 @@ namespace ThongTinYTe.CovidVnServices.Services
             client = new HttpClient();
             var contentType = new MediaTypeWithQualityHeaderValue("application/json");
             client.DefaultRequestHeaders.Accept.Add(contentType);
-            this.api = "https://data.opendevelopmentmekong.net/vi/api/3/action/datastore_search?resource_id=311599a4-664f-4205-b17a-777e5eb6b3e1";
+            this.api = "https://data.opendevelopmentmekong.net/vi/api/3/action/datastore_search?resource_id=311599a4-664f-4205-b17a-777e5eb6b3e1&sort=ID%20desc";
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
