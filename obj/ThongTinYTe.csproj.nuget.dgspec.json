@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj": {}
+    "d:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj": {
+    "d:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj",
+        "projectUniqueName": "d:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj",
         "projectName": "ThongTinYTe",
-        "projectPath": "D:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj",
+        "projectPath": "d:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\ThongTinYTe.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\obj\\",
+        "outputPath": "d:\\GIT\\FUCT\\SU21\\PRN211\\projectFolder\\ThongTinYTe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
