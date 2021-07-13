@@ -1,4 +1,4 @@
-@model KhaiBaoToanDan;
+@model KhaiBaoDiChuyen
 @{
     ViewData["Title"] = "KhaiBaoToanDan";
     SelectList countries = new SelectList(ViewBag.countries);
@@ -7,19 +7,21 @@
     SelectList genders = new SelectList(gds);
 }
 
-<div class="h3 text-center">
-    THÔNG TIN KHAI BÁO Y TẾ
-</div>
 
-<div class="h4 text-center">
-    (PHÒNG CHỐNG DỊCH COVID-19)
-</div>
 
-<div class="h5 text-center text-danger">
-    Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự
-</div>
 
-<form asp-action="KhaiBaoToanDan" method="post">
+<form action="KhaiBaoDiChuyen" method="post">
+    <div class="h3 text-center">
+        THÔNG TIN KHAI BÁO Y TẾ
+    </div>
+
+    <div class="h4 text-center">
+        (PHÒNG CHỐNG DỊCH COVID-19)
+    </div>
+
+    <div class="h5 text-center text-danger">
+        Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật Việt Nam và có thể xử lý hình sự
+    </div>
     <div class="form-group">
         <div class="form-check">
             @* TODO khai_ho *@
@@ -28,6 +30,65 @@
                 Khai hộ
             </label>
         </div>
+    </div>
+    <div class="form-group form-row">
+        <div class="col">
+            <label>
+                <b>Di chuyển trong nước</b>
+            </label>        
+        </div>
+    </div>
+    <div class="form-group form-row">
+        <div class="col">
+            <label asp-for="phuong_tien">
+                Phương tiện đi lại
+            </label>
+            @* <input type="text" class="form-control" asp-for="phuong_tien"> *@
+            <select name="cars" id="cars" class="form-control" asp-for="phuong_tien">
+                <option value="May bay">Máy bay</option>
+                <option value="Tau hoa">Tàu hỏa</option>
+                <option value="Xe khach">Xe khách</option>
+                <option value="Tau thuyen">Tàu thuyền</option>
+                <option value="Ca nhan">Cá nhân</option>
+            </select>
+        </div>
+        <div class="col">
+            <input type="hidden" class="form-control">
+        </div> 
+    </div>
+    <div class="form-group form-row">
+        <div class="col">
+            <label asp-for="noi_di">
+                Nơi đi
+            </label>
+            <select class="form-control" asp-items="@cities" asp-for="noi_di"></select>
+        </div>
+        <div class="col">
+            <label asp-for="noi_den">
+                Nơi đến
+            </label>
+            <select class="form-control" asp-items="@cities" asp-for="noi_den"></select>
+        </div>        
+    </div>
+     <div class="form-group form-row">
+        <div class="col">
+            <label asp-for="so_phuong_tien">
+                Số phương tiện
+            </label>
+            <input type="text" class="form-control" asp-for="so_phuong_tien">
+        </div>
+        <div class="col">
+            <label asp-for="noi_den">
+                Số ghế
+            </label>
+            <input type="text" class="form-control" asp-for="so_ghe">
+        </div>
+        <div class="col">
+            <label asp-for="noi_den">
+                Ngày khởi hành
+            </label>
+            <input type="date" min="2020-01-01" class="form-control" asp-for="ngay_khoi_hanh">
+        </div>         
     </div>
     <div class="form-group form-row">
         <div class="col">
