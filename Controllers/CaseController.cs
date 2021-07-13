@@ -66,9 +66,6 @@ namespace ThongTinYTe.Controllers
             }
             return RedirectToAction("Index", "Home");
         }
-
-
-
         public async Task<IActionResult> KhaiBaoDiChuyen()
         {
             // Lấy danh sách thành phố ở Việt Nam từ service
@@ -109,11 +106,7 @@ namespace ThongTinYTe.Controllers
             }
             return RedirectToAction("Index", "Home");
         }
-
     }
-
-
-
     public class CountriesAPI
     {
         public string name { get; set; }

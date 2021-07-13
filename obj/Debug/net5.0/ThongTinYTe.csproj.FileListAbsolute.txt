@@ -146,6 +146,8 @@ D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\P
 D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\Index.cshtml.g.cs
 D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\KhaiBaoToanDan.cshtml.g.cs
 D:\GIT\FUCT\SU21\PRN211\projectFolder\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\CanhBaoKhuVuc.cshtml.g.cs
+<<<<<<< HEAD
+=======
 C:\Users\admin\Desktop\Studying\PRN211\ThongTinYTe\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\admin\Desktop\Studying\PRN211\ThongTinYTe\bin\Debug\net5.0\appsettings.json
 C:\Users\admin\Desktop\Studying\PRN211\ThongTinYTe\bin\Debug\net5.0\ThongTinYTe.exe
@@ -224,3 +226,4 @@ C:\Users\admin\Desktop\Studying\PRN211\ThongTinYTe\obj\Debug\net5.0\ThongTinYTe.
 C:\Users\admin\Desktop\Studying\PRN211\ThongTinYTe\obj\Debug\net5.0\ThongTinYTe.genruntimeconfig.cache
 C:\Users\admin\Desktop\Studying\PRN211\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\KhaiBaoDiChuyen.cshtml.g.cs
 C:\Users\admin\Desktop\Studying\PRN211\ThongTinYTe\obj\Debug\net5.0\Razor\Views\Case\CanhBaoCachLy.cshtml.g.cs
+>>>>>>> 23075839058cde0fdb71f896ea3be52c7c5abff0
