@@ -12,7 +12,7 @@ namespace ThongTinYTe.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly HttpClient client = null;
-        private string api;
+        private readonly string api;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -24,8 +24,8 @@ namespace ThongTinYTe.Controllers
 
         public async Task<IActionResult> Index()
         {
-            HttpResponseMessage response = await client.GetAsync(api);
-            string data = await response.Content.ReadAsStringAsync();
+            HttpResponseMessage response = await client.GetAsync(api).ConfigureAwait(false);
+            string data = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
             var countries = JsonConvert.DeserializeObject<dynamic>(data);
             ViewBag.countries = countries;
