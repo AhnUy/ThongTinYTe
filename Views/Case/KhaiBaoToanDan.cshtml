@@ -12,7 +12,7 @@
 </div>
 
 <div class="h4 text-center">
-    (PHÒNG CHỐNG DỊCH COVID-19)
+    (PHÒNG CHỐNG DỊCH COVID-19 <i class="fas fa-virus-slash"></i>)
 </div>
 
 <div class="h5 text-center text-danger">
@@ -25,21 +25,21 @@
             @* TODO khai_ho *@
             <input class="form-check-input" type="checkbox" asp-for="khai_ho">
             <label class="text-success h6" asp-for="khai_ho">
-                Khai hộ
+                Khai hộ <i class="fas fa-people-arrows"></i>
             </label>
         </div>
     </div>
     <div class="form-group form-row">
         <div class="col">
             <label asp-for="ho_ten">
-                Họ và tên (IN HOA)
+                Họ và tên (IN HOA) <i class="fas fa-user"></i>
             </label>
             @* TODO ho_ten *@
             <input type="text" class="form-control" asp-for="ho_ten">
         </div>
         <div class="col">
             <label asp-for="cmnd_cccd">
-                CMND / CCCD
+                CMND / CCCD <i class="far fa-address-card"></i>
             </label>
             @* TODO cmnd_cccd *@
             <input type="text" class="form-control" asp-for="cmnd_cccd">
@@ -48,21 +48,21 @@
     <div class="form-group form-row">
         <div class="col">
             <label asp-for="nam_sinh">
-                Năm sinh
+                Năm sinh <i class="fas fa-baby"></i>
             </label>
             @* TODO nam_sinh *@
             <input type="number" class="form-control" asp-for="nam_sinh">
         </div>
         <div class="col">
             <label asp-for="gioi_tinh">
-                Giới tính
+                Giới tính <i class="fas fa-venus-mars"></i>
             </label>
             @* TODO gioi_tinh *@
             <select class="form-control" asp-items="@genders" asp-for="gioi_tinh"></select>
         </div>
         <div class="col">
             <label asp-for="quoc_tich">
-                Quốc tịch
+                Quốc tịch <i class="fas fa-globe"></i>
             </label>
             @* TODO quoc_tich *@
             <select class="form-control" asp-items="@countries" asp-for="quoc_tich"></select>
@@ -76,14 +76,14 @@
     <div class="form-group form-row">
         <div class="col-3">
             <label asp-for="tinh_thanh">
-                Tỉnh thành
+                Tỉnh thành <i class="fas fa-map-marked-alt"></i>
             </label>
             @* TODO tinh_thanh *@
             <select class="form-control" asp-items="@cities" asp-for="tinh_thanh"></select>
         </div>
         <div class="col">
             <label asp-for="dia_chi">
-                Số nhà, phố, tổ dân phố/thôn/đội
+                Số nhà, phố, tổ dân phố/thôn/đội <i class="fas fa-house-user"></i>
             </label>
             @* TODO dia_chi *@
             <input type="text" class="form-control" asp-for="dia_chi">
@@ -92,14 +92,14 @@
     <div class="form-group form-row">
         <div class="col">
             <label asp-for="dien_thoai">
-                Điện thoại
+                Điện thoại <i class="fas fa-phone-alt"></i>
             </label>
             @* TODO dien_thoai *@
             <input type="text" class="form-control" asp-for="dien_thoai">
         </div>
         <div class="col">
             <label asp-for="email">
-                Email
+                Email <i class="far fa-envelope"></i>
             </label>
             @* TODO email *@
             <input type="text" class="form-control" asp-for="email">
@@ -110,7 +110,7 @@
             @* TODO had_travel *@
             <input type="checkbox" class="form-check-input" asp-for="had_travel">
             <label class="h6" asp-for="had_travel">
-                Trong vòng 14 ngày qua, Anh/chị có đến tỉnh/thành phố, quốc gia/vùng lãnh thổ nào(Có thể đi qua nhiều nơi).
+                <i class="fas fa-route"></i> Trong vòng 14 ngày qua, Anh/chị có đến tỉnh/thành phố, quốc gia/vùng lãnh thổ nào(Có thể đi qua nhiều nơi).
             </label>
         </div>
     </div>
@@ -119,7 +119,7 @@
             @* TODO had_symptom *@
             <input type="checkbox" class="form-check-input" asp-for="had_symptom">
             <label class="h6" asp-for="had_symptom">
-                Trong vòng 14 ngày qua, Anh/chị có thấy xuất hiện ít nhất một trong các dấu hiệu:sốt, ho, khó thở, viêm phổi, đau họng, mệt mỏi.
+                <i class="fas fa-head-side-cough"></i> Trong vòng 14 ngày qua, Anh/chị có thấy xuất hiện ít nhất một trong các dấu hiệu:sốt, ho, khó thở, viêm phổi, đau họng, mệt mỏi.
             </label>
         </div>
     </div>
@@ -128,12 +128,12 @@
             @* TODO had_contact_infected_suspected *@
             <input type="checkbox" class="form-check-input" asp-for="had_contact_infected_suspected">
             <label class="h6" asp-for="had_contact_infected_suspected">
-                Trong vòng 14 ngày qua, Anh/Chị có tiếp xúc với người bệnh hoặc nghi ngờ, mắc bệnh COVID-19.
+                <i class="fas fa-head-side-virus"></i> Trong vòng 14 ngày qua, Anh/Chị có tiếp xúc với người bệnh hoặc nghi ngờ, mắc bệnh COVID-19.
             </label>
         </div>
     </div>
-    <button type="submit" class="btn btn-outline-primary form-control">Gửi</button>
+    <button type="submit" class="btn btn-outline-primary form-control">Gửi <i class="fas fa-paper-plane"></i></button>
 </form>
 <a class="btn btn-secondary d-flex justify-content-center" asp-controller="Home" asp-action="Index">
-    Quay về trang chủ
+    Quay về trang chủ 
 </a>
