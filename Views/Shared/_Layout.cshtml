@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     @*Uy zone*@
+    <script src="https://kit.fontawesome.com/88ef2b516b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
     @*-------*@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -40,7 +41,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ThongTinYTe</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-book-medical"></i> ThongTinYTe</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -48,16 +49,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index"><i class="fas fa-globe-americas"></i> Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Province" asp-action="Index">Tình hình Việt Nam</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Province" asp-action="Index"><i class="fas fa-map-marked-alt"></i> Tình hình Việt Nam</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Case" asp-action="KhaiBaoToanDan">Khai báo toàn dân</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Case" asp-action="KhaiBaoToanDan"><i class="fas fa-notes-medical"></i> Khai báo toàn dân</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Case" asp-action="KhaiBaoDiChuyen">Khai báo di chuyển</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Case" asp-action="KhaiBaoDiChuyen"><i class="fas fa-bus"></i> Khai báo di chuyển</a>
                         </li>
                     </ul>
                 </div>
